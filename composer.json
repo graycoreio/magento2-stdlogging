@@ -1,0 +1,65 @@
+{
+    "name": "graycore/magento2-stdlogging",
+    "description": "A Magento 2 module that changes logs to used STDOUT and STDERR",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damien Retzinger",
+            "email": "damienwebdev@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php test",
+        "unit-test": "vendor/bin/phpunit ./Test/Unit",
+        "lint": "phpcs . --standard=Magento2 --ignore='vendor/*'",
+        "post-install-cmd": [
+            "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+        ],
+        "post-update-cmd": [
+            "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+        ]
+    },
+    "archive": {
+        "exclude": [
+            "/docs",
+            "/Test",
+            "README.md"
+        ]
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Graycore\\StdLogging\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "magento/framework": "^102.0"
+    },
+    "require-dev": {
+        "magento/magento-coding-standard": "^5.0",
+        "phpunit/phpunit": "^8.2",
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.0",
+            "ext-bcmath": "7.2.0",
+            "ext-gd": "7.2.0",
+            "ext-curl": "7.2.0"
+        }
+    }
+}
