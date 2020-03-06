@@ -6,9 +6,15 @@
 [![License](https://poser.pugx.org/graycore/magento2-stdlogging/license)](https://packagist.org/packages/graycore/magento2-stdlogging)
 
 ## Purpose
-This module is a drop in replacement to pump all Magento logs to StdOut and StdErr.
+This module is a drop in replacement to pump all Magento 2 logs to StdOut and StdErr. This is especially useful when working in a dockerized environment where you want to aggregate your logs.
 
-This is especially useful when working in a dockerized environment where you want to aggregate your logs.
+
+## Mechanism
+Specifically, we override the Base logger and replace it with a StdErr logger.
+
+```txt
+Magento/Framework/Logger/Handler/Base.php
+```
 
 ## Getting Started
 This module is intended to be installed with [composer](https://getcomposer.org/). From the root of your Magento 2 project:

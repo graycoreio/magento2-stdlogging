@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Framework\Logger\Handler\Base" type="Graycore\StdLogging\Handler\Stdout"/>
+    <preference for="Magento\Framework\Logger\Handler\Debug" type="Graycore\StdLogging\Handler\Stdout"/>
+    <type name="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers"  xsi:type="array">
+                <item name="stdout" xsi:type="object">Graycore\StdLogging\Handler\Stdout</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

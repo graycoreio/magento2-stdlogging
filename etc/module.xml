@@ -4,6 +4,7 @@
     <module name="Graycore_StdLogging" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Store"/>
+            <module name="Magento_Developer"/>
         </sequence>
     </module>
 </config>
