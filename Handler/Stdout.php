@@ -7,7 +7,6 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
 use Magento\Framework\App\State;
-use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Config\Setup\ConfigOptionsList;
 use Magento\Framework\App\DeploymentConfig;
 
@@ -38,7 +37,6 @@ class Stdout extends StreamHandler {
 
     /**
      * @param State $state
-     * @param ScopeConfigInterface $scopeConfig
      * @param DeploymentConfig $deploymentConfig
      * @throws \Exception
      */
@@ -49,7 +47,7 @@ class Stdout extends StreamHandler {
         $this->state = $state;
         $this->deploymentConfig = $deploymentConfig;
 
-        if($this->isDebugLoggingEnabled()){
+        if($this->deploymentConfig->isAvailable() && $this->isDebugLoggingEnabled()){
             $this->loggerType = Logger::DEBUG;
         }
 
