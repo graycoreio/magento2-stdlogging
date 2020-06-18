@@ -14,10 +14,6 @@ use Magento\Framework\App\DeploymentConfig;
 class Stdout extends StreamHandler {
 
     /**
-     * @var State
-     */
-    private $state;
-    /**
      * @var DeploymentConfig
      */
     private $deploymentConfig;
@@ -36,15 +32,10 @@ class Stdout extends StreamHandler {
     protected $loggerType = Logger::INFO;
 
     /**
-     * @param State $state
      * @param DeploymentConfig $deploymentConfig
      * @throws \Exception
      */
-    public function __construct(
-        State $state,
-        DeploymentConfig $deploymentConfig
-    ) {
-        $this->state = $state;
+    public function __construct(DeploymentConfig $deploymentConfig) {
         $this->deploymentConfig = $deploymentConfig;
 
         if($this->deploymentConfig->isAvailable() && $this->isDebugLoggingEnabled()){
@@ -64,7 +55,7 @@ class Stdout extends StreamHandler {
     {
         $configValue = $this->deploymentConfig->get(ConfigOptionsList::CONFIG_PATH_DEBUG_LOGGING);
         if ($configValue === null) {
-            $isEnabled = $this->state->getMode() !== State::MODE_PRODUCTION;
+            $isEnabled = $this->deploymentConfig->get(State::PARAM_MODE) !== State::MODE_PRODUCTION;
         } else {
             $isEnabled = (bool)$configValue;
         }
