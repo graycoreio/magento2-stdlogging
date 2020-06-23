@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/graycoreio/magento2-stdlogging/compare/v1.0.2...v1.0.3) (2020-06-23)
+
+
+### Bug Fixes
+
+* **handler:** fix bug where accessing state  would cause a crash during setup:install ([#1](https://github.com/graycoreio/magento2-stdlogging/issues/1)) ([c903733](https://github.com/graycoreio/magento2-stdlogging/commit/c903733))
+
+
+
 ### [1.0.2](https://github.com/graycoreio/magento2-stdlogging/compare/v1.0.1...v1.0.2) (2020-03-12)
 
 
