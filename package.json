@@ -1,7 +1,7 @@
 {
   "name": "@graycore/magento2-stdlogging",
   "description": "A Magento 2 module that changes logs to used STDOUT and STDERR",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "directories": {
     "doc": "docs"
   },

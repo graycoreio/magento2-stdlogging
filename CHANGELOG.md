@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/graycoreio/magento2-stdlogging/compare/v1.0.3...v1.1.0) (2020-09-16)
+
+
+### Features
+
+* **deps:** update deps to support Magento v2.4 ([0958f4a](https://github.com/graycoreio/magento2-stdlogging/commit/0958f4a43c62cc5658a4147d3d18eb87271213f4))
+
 ### [1.0.3](https://github.com/graycoreio/magento2-stdlogging/compare/v1.0.2...v1.0.3) (2020-06-23)
 
 
