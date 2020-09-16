@@ -2,7 +2,6 @@
     "name": "graycore/magento2-stdlogging",
     "description": "A Magento 2 module that changes all logging handlers to syslog",
     "type": "magento2-module",
-    "version": "1.0.3",
     "license": "MIT",
     "authors": [
         {
