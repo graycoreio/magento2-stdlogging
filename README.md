@@ -1,4 +1,4 @@
-# Magento 2 CORS
+# Magento 2 StdLogging
 
 [![Packagist Downloads](https://img.shields.io/packagist/dm/graycore/magento2-stdlogging?color=blue)](https://packagist.org/packages/graycore/magento2-stdlogging/stats)
 [![Packagist Version](https://img.shields.io/packagist/v/graycore/magento2-stdlogging?color=blue)](https://packagist.org/packages/graycore/magento2-stdlogging)
