@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/graycoreio/magento2-stdlogging/compare/v1.1.0...v1.1.1) (2020-10-23)
+
+
+### Bug Fixes
+
+* **deps:** align monolog version with Magento base version ([3380ca7](https://github.com/graycoreio/magento2-stdlogging/commit/3380ca7a3c971b7f857b77821a582459f9055c34))
+
 ## [1.1.0](https://github.com/graycoreio/magento2-stdlogging/compare/v1.0.3...v1.1.0) (2020-09-16)
 
 
