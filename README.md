@@ -3,7 +3,7 @@
 [![Packagist Downloads](https://img.shields.io/packagist/dm/graycore/magento2-stdlogging?color=blue)](https://packagist.org/packages/graycore/magento2-stdlogging/stats)
 [![Packagist Version](https://img.shields.io/packagist/v/graycore/magento2-stdlogging?color=blue)](https://packagist.org/packages/graycore/magento2-stdlogging)
 [![Packagist License](https://img.shields.io/packagist/l/graycore/magento2-stdlogging)](https://github.com/graycoreio/magento2-stdlogging/blob/main/LICENSE)
-[![Build Status](https://graycore.visualstudio.com/open-source/_apis/build/status/graycoreio.magento2-stdlogging?branchName=main)](https://graycore.visualstudio.com/open-source/_build/latest?definitionId=14&branchName=main)
+[![Build Status](https://graycore.visualstudio.com/open-source/_apis/build/status/graycoreio.magento2-stdlogging?branchName=main)](https://graycore.visualstudio.com/open-source/_build/latest?definitionId=18&branchName=main)
 
 ## Magento Version Support
 ![Magento v2.3 Supported](https://img.shields.io/badge/Magento-2.3-brightgreen.svg?labelColor=2f2b2f&logo=magento&logoColor=f26724&color=464246&longCache=true&style=flat)
