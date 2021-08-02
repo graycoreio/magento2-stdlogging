@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/graycoreio/magento2-stdlogging#readme",
   "devDependencies": {
-    "standard-version": "^9.0.0"
+    "standard-version": "^9.3.1"
   }
 }
