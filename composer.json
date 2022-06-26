@@ -37,15 +37,14 @@
         ]
     },
     "require": {
-        "php": ">=7.0.0",
         "magento/framework": "^102.0 || ^103.0",
         "magento/module-developer": "^100.3.3",
-        "monolog/monolog": "^1.16"
+        "monolog/monolog": "^1 || ^2"
     },
     "require-dev": {
-        "magento/magento-coding-standard": "^5.0",
-        "phpunit/phpunit": "^8.2",
-        "squizlabs/php_codesniffer": "^3.4"
+        "magento/magento-coding-standard": ">=6",
+        "phpunit/phpunit": "^8 || ^9",
+        "squizlabs/php_codesniffer": "^3.0.0"
     },
     "repositories": [
         {
