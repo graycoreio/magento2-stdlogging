@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/graycoreio/magento2-stdlogging/compare/v1.1.1...v2.0.0) (2022-06-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **all:** we no longer test against php7.2. Please use it at your own risk.
+
+### ci
+
+* **all:** fixup failing CI pipeline ([#15](https://github.com/graycoreio/magento2-stdlogging/issues/15)) ([f8dd292](https://github.com/graycoreio/magento2-stdlogging/commit/f8dd292eee2232d3355ed80dcf632906632c5960))
+
 ### [1.1.1](https://github.com/graycoreio/magento2-stdlogging/compare/v1.1.0...v1.1.1) (2020-10-23)
 
 
