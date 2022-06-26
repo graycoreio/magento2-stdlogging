@@ -3,7 +3,7 @@ name: Installation Test
 on:
   push:
     branches:
-    - master
+    - main
     paths-ignore:
     - "docs/**"
     - package.json
@@ -11,7 +11,7 @@ on:
     - "*.md"
   pull_request:
     branches:
-    - master
+    - main
     paths-ignore:
     - "docs/**"
     - package.json
