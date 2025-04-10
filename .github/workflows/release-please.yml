@@ -3,7 +3,7 @@ name: Create Release
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   release-please:
@@ -13,4 +13,4 @@ jobs:
         with:
           token: ${{ secrets.GRAYCORE_GITHUB_TOKEN }}
           command: manifest
-          default-branch: master
+          default-branch: main
