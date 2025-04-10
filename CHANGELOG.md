@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/graycoreio/magento2-stdlogging/compare/v2.0.0...v2.1.0) (2025-04-10)
+
+
+### Features
+
+* bump allowed monolog dependency  ([#27](https://github.com/graycoreio/magento2-stdlogging/issues/27)) ([5eedf82](https://github.com/graycoreio/magento2-stdlogging/commit/5eedf82e18833e27fa3ed571b9b3b19cd7127061))
+
+
+### Bug Fixes
+
+* log bubbling compat between v2 and v3  ([#27](https://github.com/graycoreio/magento2-stdlogging/issues/27)) ([9945597](https://github.com/graycoreio/magento2-stdlogging/commit/994559767a720853ea36143a81586e3acf08c8de))
+
+
+### Miscellaneous Chores
+
+* **deps:** ignore Magento plugin ([#24](https://github.com/graycoreio/magento2-stdlogging/issues/24)) ([e254c4e](https://github.com/graycoreio/magento2-stdlogging/commit/e254c4e85b458be5565563d95459a3a4249d5bbf))
+
 ## [2.0.0](https://github.com/graycoreio/magento2-stdlogging/compare/v1.1.1...v2.0.0) (2022-06-26)
 
 
