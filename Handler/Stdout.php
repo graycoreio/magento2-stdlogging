@@ -18,14 +18,6 @@ class Stdout extends StreamHandler
     private $deploymentConfig;
 
     /**
-     * Log stack bubbling
-     * See: https://github.com/Seldaek/monolog
-     *
-     * We disable bubbling as this logger should be the only logger.
-     */
-    protected $bubble = false;
-
-    /**
      * @var int
      */
     protected $loggerType = Logger::INFO;
@@ -36,6 +28,14 @@ class Stdout extends StreamHandler
      */
     public function __construct(DeploymentConfig $deploymentConfig)
     {
+        /**
+         * Log stack bubbling
+         * See: https://github.com/Seldaek/monolog
+         *
+         * We disable bubbling as this logger should be the only logger.
+         */
+        $this->bubble = false;
+
         $this->deploymentConfig = $deploymentConfig;
 
         if ($this->deploymentConfig->isAvailable() && $this->isDebugLoggingEnabled()) {
