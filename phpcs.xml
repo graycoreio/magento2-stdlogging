@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset>
+    <description>PHP CodeSniffer configuration for Graycore Daffodil module</description>
+
+    <!-- Scan these files/directories -->
+    <file>.</file>
+
+    <!-- Exclude paths -->
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>node_modules/*</exclude-pattern>
+
+    <!-- Use Magento2 coding standard -->
+    <rule ref="Magento2"/>
+</ruleset>
