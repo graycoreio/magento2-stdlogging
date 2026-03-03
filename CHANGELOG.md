@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.1](https://github.com/graycoreio/magento2-stdlogging/compare/v2.1.0...v2.1.1) (2026-03-03)
+
+
+### Miscellaneous Chores
+
+* remove nodejs deps ([4c9ef6e](https://github.com/graycoreio/magento2-stdlogging/commit/4c9ef6e918546e280d27bf40fc9e9e2279531b3b))
+
 ## [2.1.0](https://github.com/graycoreio/magento2-stdlogging/compare/v2.0.0...v2.1.0) (2025-04-10)
 
 
