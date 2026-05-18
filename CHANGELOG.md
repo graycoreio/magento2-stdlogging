@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.2](https://github.com/graycoreio/magento2-stdlogging/compare/v2.1.1...v2.1.2) (2026-05-18)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** upgrade to phpunit 12 and magento/magento-coding-standard:40 ([d3024c9](https://github.com/graycoreio/magento2-stdlogging/commit/d3024c91bc413d63fc6b704e42aa91efb43b790f))
+* **deps:** bump graycoreio/github-actions-magento2 from [@main](https://github.com/main) to 8.2.0 ([31c55ba](https://github.com/graycoreio/magento2-stdlogging/commit/31c55ba6723febd69854382d3a62d9d318cb1a2b))
+
 ## [2.1.1](https://github.com/graycoreio/magento2-stdlogging/compare/v2.1.0...v2.1.1) (2026-03-03)
 
 
