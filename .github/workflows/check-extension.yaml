@@ -7,19 +7,9 @@ on:
   push:
     branches:
     - main
-    paths-ignore:
-    - "docs/**"
-    - package.json
-    - package-lock.json
-    - "*.md"
   pull_request:
     branches:
     - main
-    paths-ignore:
-    - "docs/**"
-    - package.json
-    - package-lock.json
-    - "*.md"
 
 jobs:
   compute_matrix:
@@ -27,15 +17,11 @@ jobs:
       outputs:
         matrix: ${{ steps.supported-version.outputs.matrix }}
       steps:
-        - uses: graycoreio/github-actions-magento2/supported-version@v8.5.0
+        - uses: graycoreio/github-actions-magento2/supported-version@v8.8.0
           id: supported-version
-          with:
-              include_services: true
   check-extension:
     needs: compute_matrix
-    uses: graycoreio/github-actions-magento2/.github/workflows/check-extension.yaml@v8.5.0
+    uses: graycoreio/github-actions-magento2/.github/workflows/check-extension.yaml@v8.8.0
     with:
       matrix: ${{ needs.compute_matrix.outputs.matrix }}
       fail-fast: false
-    secrets:
-      composer_auth: ${{ secrets.COMPOSER_AUTH }}
