@@ -5,3 +5,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 3
+    groups:
+      graycore-actions:
+        patterns:
+          - "graycoreio/github-actions-magento2*"
