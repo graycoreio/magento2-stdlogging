@@ -20,6 +20,9 @@
 ## Purpose
 This module is a drop in replacement to pump all Magento 2 logs to StdOut. This is especially useful when working in a dockerized environment where you want to aggregate your logs into an external system without having to know about Magento specific log files and configurations.
 
+## Detached background processes
+Magento detaches cron group workers and message queue consumers by appending `2>/dev/null >/dev/null &` to the command, discarding everything they write — including uncatchable PHP fatals (e.g. `memory_limit` exhaustion) that never reach Monolog. This module rewrites that redirect to point at PID 1's stdout, the stream the container runtime collects, while keeping the process detached. Where PID 1's descriptors are unreachable (no `/proc`, unprivileged caller), core behaviour is left untouched.
+
 ## Getting Started
 This module is intended to be installed with [composer](https://getcomposer.org/). From the root of your Magento 2 project:
 

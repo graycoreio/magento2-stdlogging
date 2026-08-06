@@ -9,4 +9,8 @@
             </argument>
         </arguments>
     </type>
+    <type name="Magento\Framework\Shell\CommandRendererBackground">
+        <plugin name="graycore_stdlogging_redirect_background_output"
+                type="Graycore\StdLogging\Plugin\Shell\RedirectBackgroundOutput"/>
+    </type>
 </config>
