@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/graycoreio/magento2-stdlogging/compare/v2.1.2...v2.2.0) (2026-08-06)
+
+
+### Features
+
+* allow cron background tasks to log ([f9c47f4](https://github.com/graycoreio/magento2-stdlogging/commit/f9c47f4ef7b12e136f802e74a367d6b71e600608))
+
 ## [2.1.2](https://github.com/graycoreio/magento2-stdlogging/compare/v2.1.1...v2.1.2) (2026-05-18)
 
 
