@@ -32,6 +32,8 @@ class RedirectBackgroundOutput
     }
 
     /**
+     * Redirect discarded background output to the container's stdout.
+     *
      * @param CommandRendererBackground $subject
      * @param string $result
      * @return string
@@ -55,6 +57,8 @@ class RedirectBackgroundOutput
     }
 
     /**
+     * Check whether PID 1's stdout can be written to.
+     *
      * False on hosts without /proc or when PID 1's descriptors are unreachable;
      * core behaviour is preserved in those cases.
      *
