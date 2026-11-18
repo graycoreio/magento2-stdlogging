@@ -42,8 +42,11 @@
         "monolog/monolog": "^1 || ^2 || ^3"
     },
     "require-dev": {
-        "magento/magento-coding-standard": "^40",
+        "bitexpert/phpstan-magento": "^0.44",
+        "magento/magento-coding-standard": "^41",
         "magento/php-compatibility-fork": "^0.1.0",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^12.0",
         "squizlabs/php_codesniffer": "^3.0.0"
     },
@@ -58,7 +61,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "magento/composer-dependency-version-audit-plugin": false,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
         }
     }
 }
